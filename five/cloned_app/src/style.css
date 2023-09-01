@@ -1,0 +1,11 @@
+.NavBar-img{
+    height:80px;
+}
+
+.flex-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 6px -6px black;
+    padding: 1.5rem 2rem;
+}
