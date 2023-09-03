@@ -1,5 +1,5 @@
 import NavBar from "./NavBar";
-import Gallery from "./gallery";
+import Gallery from "./Gallery";
 
 
 function App() {
@@ -7,6 +7,7 @@ function App() {
     <>
         <NavBar/>
         <Gallery/>
+
     </>
   );
 }
