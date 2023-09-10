@@ -42,7 +42,7 @@ export default function Gallery(){
         fontWeight: 'bold',
     }
     return (
-                <div className="carousel-container" style={{padding: "0 20px"}}>
+                <div className="carousel-container" style={{padding: "0px 0px 60px"}}>
                     <Carousel className ="main-carousel"
                          data={data}
                          time={4000}
