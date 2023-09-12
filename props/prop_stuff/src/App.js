@@ -1,12 +1,23 @@
 import Card from "./card";
-import Photo1 from "./images/blend-hell-GNQUsuajHFQ-unsplash.jpg"
-import Photo2 from "./images/terry-vlisidis-WsEbnsnKbUE-unsplash.jpg"
-import Photo3 from "./images/jordan-newsom-2n8USpVDRq8-unsplash.jpg"
-import Photo4 from "./images/tomasz-dzioch-GPBQ8Kr46do-unsplash.jpg"
+import cardData from "./cardData";
 
 function App() {
+    const cardElements = cardData.map(card =>{
+        return <Card img = {card.img} name = {card.name} description ={card.description}/>
+})
   return (
-    <div className="card-container">
+    <div>
+        {cardElements}
+    </div>
+  );
+}
+
+export default App;
+
+
+
+/*
+<div className="card-container">
         <Card
             img = {Photo1}
             name = "Siamese Fighting Fish"
@@ -29,7 +40,5 @@ function App() {
         />
 
     </div>
-  );
-}
 
-export default App;
+ */
