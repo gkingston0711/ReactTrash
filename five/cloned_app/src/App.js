@@ -6,16 +6,25 @@ import Photo1 from "./images/blend-hell-GNQUsuajHFQ-unsplash.jpg"
 import Photo2 from "./images/terry-vlisidis-WsEbnsnKbUE-unsplash.jpg"
 import Photo3 from "./images/jordan-newsom-2n8USpVDRq8-unsplash.jpg"
 import Photo4 from "./images/tomasz-dzioch-GPBQ8Kr46do-unsplash.jpg"
+import cardData from "./cardData";
+import ScrollCarousel from "scroll-carousel-react";
+import {ScrollingCarousel} from "@trendyol-js/react-carousel";
+import {ScrollMotionValues} from "framer-motion";
 
 
 
 function App() {
+    const cardElements = cardData.map(card =>{
+        return <Card img = {card.img} name = {card.name} description ={card.description}/>
+    })
   return (
     <>
         <NavBar/>
         <Gallery className = "image-gallery"/>
         <div className="card-container">
-            <Card
+            {cardElements}
+
+           {/* <Card
                 img = {Photo1}
                 name = "Siamese Fighting Fish"
                 description = "The Siamese fighting fish, commonly known as the betta, is a freshwater fish native to Southeast Asia, namely Cambodia, Laos, Myanmar, Malaysia, Indonesia, Thailand, and Vietnam."
@@ -35,7 +44,7 @@ function App() {
                 name = "Bottle Corks"
                 description = "Besides screw caps (made of metal and plastic), there are several 'fake' corks made from plastics to plant-based polymers."
             />
-
+*/}
         </div>
 
     </>

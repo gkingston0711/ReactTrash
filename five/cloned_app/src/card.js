@@ -9,7 +9,7 @@ export default function Card(props){
             <img src={props.img} alt ="birdblackdrop" />
             <div className="card-body">
                 <h2>{props.name}</h2>
-                <p>{props.description}</p>
+                <p className="card-description">{props.description}</p>
             </div>
         </div>
 
