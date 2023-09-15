@@ -1,14 +1,15 @@
 import React from "react";
-import photo1 from "./images/Python.svg.png"
 
-export default function Card(){
+
+export default function Card(props){
     return(
         <div className="card-container">
-            <img src={photo1} alt ="card_image" />
+            <img src={props.img} alt ="card_image" />
             <div className="card-body">
-                <h2>Language Type</h2>
-                <p className="card-description">something here</p>
-                <footer>footer here</footer>
+                <h3 className="title">{props.title}</h3>
+                <a href={props.doclink} className="doc-link">Documentation</a>
+                <p className="creation-date">Creation Date: {props.date}</p>
+                <p className="description">{props.description}</p>
             </div>
         </div>
     )
