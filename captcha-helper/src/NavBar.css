@@ -13,6 +13,7 @@
 }
 
 .nav-container .NavBar-text{
-    color: red;
-    margin-right: 45%;
+    color: darkgray;
+    margin-right: 47%;
+    font-weight: 200;
 }
